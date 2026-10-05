@@ -1,0 +1,2 @@
+import {SecItem} from '../types/cloud';import StatusBadge from './StatusBadge'
+export default function SecurityCard({title,items}:{title:string;items:SecItem[]}){return <div className="card"><h3 className="mb-3 text-lg font-semibold">{title}</h3><ul className="space-y-3">{items.map(i=><li key={i.title} className="flex items-start justify-between gap-3"><div><p className="text-sm font-medium">{i.title}</p><p className="text-xs text-mute">{i.detail}</p></div><StatusBadge status={i.status}/></li>)}</ul></div>}

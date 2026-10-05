@@ -1,0 +1,1 @@
+export default{darkMode:'class',content:['./index.html','./src/**/*.{ts,tsx}'],theme:{extend:{colors:{bg:'rgb(var(--bg) / <alpha-value>)',surface:'rgb(var(--surface) / <alpha-value>)',line:'rgb(var(--line) / <alpha-value>)',ink:'rgb(var(--ink) / <alpha-value>)',mute:'rgb(var(--mute) / <alpha-value>)',side:'#0F172A',brand:'#2563EB',sec:'#16A34A',cost:'#F59E0B',alert:'#DC2626'}}}}

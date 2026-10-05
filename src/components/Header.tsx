@@ -1,0 +1,3 @@
+import {Menu,Bell} from 'lucide-react'
+import ThemeToggle from './ThemeToggle'
+export default function Header({title,sub,onMenu}:{title:string;sub:string;onMenu:()=>void}){return <header className="flex items-center gap-3 border-b border-line bg-surface px-4 py-4 transition-colors lg:px-8"><button className="lg:hidden" aria-label="Abrir menú" onClick={onMenu}><Menu/></button><div className="flex-1"><h1 className="text-[28px] font-bold leading-tight">{title}</h1><p className="text-sm text-mute">{sub}</p></div><ThemeToggle/><Bell size={20} className="text-mute"/><div className="grid h-9 w-9 place-items-center rounded-full bg-brand text-sm font-bold text-white">AM</div></header>}

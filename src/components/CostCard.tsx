@@ -1,0 +1,1 @@
+export default function CostCard({label,value}:{label:string;value:string}){return <div className="card border-l-4 border-l-cost"><p className="text-xs text-mute">{label}</p><p className="text-2xl font-bold">{value}</p></div>}

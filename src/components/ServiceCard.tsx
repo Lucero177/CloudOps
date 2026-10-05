@@ -1,0 +1,2 @@
+import {Service} from '../types/cloud'
+export default function ServiceCard({s}:{s:Service}){return <div className="card"><div className="flex justify-between gap-2"><h3 className="font-semibold">{s.name}</h3><span className={`text-xs font-semibold ${s.used?'text-sec':'text-mute'}`}>{s.used?'En uso':'Disponible'}</span></div><p className="mt-0.5 text-xs text-brand">{s.category}</p><p className="mt-3 text-sm text-mute">{s.desc}</p><p className="mt-2 text-sm"><b>Función:</b> {s.fn}</p></div>}
